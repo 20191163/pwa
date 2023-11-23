@@ -1,0 +1,9 @@
+/* Footer.css (o donde tengas los estilos del Footer) */
+.footer {
+    position: relative; /* O estático, según tus necesidades */
+  }
+/* Footer.css */
+.footer {
+    z-index: 1; /* O cualquier número inferior al z-index de los elementos que deben estar por encima */
+  }
+    

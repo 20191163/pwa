@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    
+    --background: #FAFAFA;
+    --gray: #847F90;
+    
+    --white: #FCFCFC;
+    --navbar-height: 74px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between; /* Espacio entre los proyectos */
+}
+/* Navigation Menu */
+
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    fill: var(--primary);
+}
+
+
+/* Login and sign-up buttons */
+.action-buttons {
+    
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-right: 0%;
+}
+
+.action-buttons a { 
+
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    transition: all 0.2s ease-in-out;
+    line-height: 1.25rem;
+}
+
+.secondary {
+    background: none;
+    color: var(--link-gray-hover);
+    outline: none;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+}
+
+.secondary:hover {
+    background: var(--secondary-background);
+}
+
+.primary {
+    color: var(--white);
+    border-radius: 6px;
+    background-color: var(--primary);
+    padding: 8px 16px;
+}
+
+.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.burger-menu {
+    display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+@media (max-width: 769px) {
+    .menu__wrapper--open .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__wrapper--open .action-buttons {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        pointer-events: all;
+        gap: 4px;
+        flex-direction: column;
+        border: 1px solid var(--gray-border);
+    }
+
+    .burger-menu svg {
+        height: 20px;
+        stroke: var(--link-gray);
+        width: 20px;
+    }
+
+    .menu__wrapper--open .dropdown__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background);
+        z-index: 2;
+    }
+
+    .menu__wrapper--open .dropdown {
+        max-width: 100%;
+        overflow-y: auto;
+    }
+}
+
+/* Styles for the logo */
+.logo {
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16px; /* Adjust margin as needed */
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.menu__bar {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los proyectos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    
+}
+
+.var-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: .1px solid #9c9c9c;
+    background-color: #f5f6f7;
+    box-shadow: 0 4px 8px 0 #dadada, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    font-size: medium;
+    
+}
+
+.logo {
+    border-radius: 50%;
+    background-color: rgb(68, 68, 68);
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-var {
+    margin: 5%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.nav-var li {
+    margin: 0 15px;
+    color: #848484;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-var a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Pseudo-elemento para la animación de subrayado */
+.nav-var li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(118, 189, 255, 0.716);
+    height: 4px; /* Ajusta este valor para hacer la línea más gruesa */
+    transition: width .5s ease; /* Transición suave */
+    filter: pixelate(4px);
+}
+
+.nav-var li:hover::after {
+    width: 100%; /* Ancho completo al pasar el mouse */
+}
+

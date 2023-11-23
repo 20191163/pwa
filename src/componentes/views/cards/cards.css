@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex: auto;
+}
+
+.mis-proyectos {
+    
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-around; /* Espacio entre los proyectos */
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en dispositivos más pequeños */
+    align-items: center;
+    margin: 5vh;
+    width: 45%; /* Ajusta el ancho de cada tarjeta según sea necesario */
+    max-width: 300px; /* Establece un ancho máximo para evitar que se extienda demasiado */
+    padding: 20px;
+    background: #86ac9b;
+    border-radius: 24px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: inherit;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card .image-container {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: inherit;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+}
+
+.card h3 {
+    color: rgb(0, 0, 0, 0.9);
+}
+
+.card p {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.card button {
+    border: 0;
+    background: #e3413f;
+    color: #f8f8f8;
+    font-family: inherit;
+    padding: 16px 26px;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+@media (max-width: 740px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 80%; /* Ajusta el ancho según sea necesario */
+        max-width: 100%;
+    }
+
+    .card img {
+        margin: -20px 0 20px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.search-bar {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff; /* Mismo color de fondo que las cards */
+    border-radius: 24px; /* Mismo borde redondeado que las cards */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Misma sombra que las cards */
+    font-size: medium;
+}
+

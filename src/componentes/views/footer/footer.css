@@ -1,0 +1,133 @@
+/* Estilos generales del footer */
+
+.contenedor{
+  width: 110%;
+  border: 3px solid red;
+}
+
+
+footer {
+    background: #86ac9b;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0; /* Ajusta el espacio de relleno según sea necesario */
+    width: 100%;
+    position: relative;
+  }
+  
+  .top {
+    height: auto;
+  }
+  
+  /* Estilos para el footer.top */
+  footer.top {
+    position: relative;
+    display: grid;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+  }
+  
+  footer.top > img {
+    height: 50px;
+    margin: 0 auto 50px;
+  }
+  
+  footer.top.links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  footer.top.links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  footer.top h2 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255, 0.96);
+  }
+  
+  footer.top p {
+    margin: 0;
+  }
+  
+  footer.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 56px;
+  }
+  
+  footer.top .socials > a {
+    font-size: 24px;
+  }
+  
+  /* Estilos para tamaños de pantalla mayores a 400px */
+  @media (min-width: 400px) {
+    .links-column {
+      text-align: left;
+    }
+  
+    footer.top.links {
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 50px;
+    }
+  
+    footer.top.socials {
+      left: 0;
+      transform: translateX(0);
+    }
+  
+    footer.top > img {
+      margin: 0 50px;
+    }
+  
+    footer.bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+  }
+  
+  /* Estilos para tamaños de pantalla mayores o iguales a 640px */
+  @media (min-width: 640px) {
+    footer {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    footer.top.links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    footer.top .socials {
+      position: static;
+    }
+  
+    footer.bottom {
+      justify-content: flex-start;
+    }
+  
+    .socials-column :is(h2, p) {
+      display: block;
+    
+    }
+  }
+  .top{
+    width: 110%;
+    border: 3px solid red;
+  }
