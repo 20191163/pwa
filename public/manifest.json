@@ -4,14 +4,10 @@
   "description": "Una aplicación refrescante para disfrutar tus bebidas favoritas.",
   
   "icons": [
+    
     {
-      "src": "logo64.png",
-      "sizes": "64x64",
-      "type": "image/png"
-    },
-    {
-      "src": "logo32.png",
-      "sizes": "32x32",
+      "src": "logo16.png",
+      "sizes": "16x16",
       "type": "image/png"
     },
     {
@@ -20,8 +16,13 @@
       "type": "image/png"
     },
     {
-      "src": "logo16.png",
-      "sizes": "16x16",
+      "src": "logo32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo64.png",
+      "sizes": "64x64",
       "type": "image/png"
     },
     {

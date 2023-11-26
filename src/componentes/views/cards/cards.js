@@ -45,7 +45,7 @@ const App = () => {
       },
       {
         id: 6,
-        image: 'https://chedrauimx.vtexassets.com/arquivos/ids/21871425/1208500_00.jpg?v=638350061990500000',
+        image: 'https://www.farmaciascumbres.com.mx/wp-content/uploads/2022/05/51qFN61oSOL._AC_-1.jpg',
         name: 'Mountain Dew',
         type: 'Refresco energético',
         description: 'Una opción con un toque de energía para mantenerte activo durante el día.',
